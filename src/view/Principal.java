@@ -9,7 +9,7 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		IArquivosController arqCont = new ArquivosController();
-		String path = "C:\\AS3\\TEMP\\";
+		String path = "C:\\WINDOWS\\TEMP\\";
 		String nome = "generic_food.csv";
 		try {
 			arqCont.readDir(path);
