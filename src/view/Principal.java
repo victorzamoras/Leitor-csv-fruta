@@ -9,14 +9,12 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		IArquivosController arqCont = new ArquivosController();
-		String dirWin = "C:\\Windows";
-		String path = "C:\\TEMP\\Aula";
-		String nome = "teste.csv";
+		String path = "C:\\AS3\\TEMP\\";
+		String nome = "generic_food.csv";
 		try {
-	//		arqCont.readDir(dirWin);
-	//		arqCont.createFile(path, nome);
-	//		arqCont.readFile(path,nome);
-			arqCont.openFile(path, nome);
+			arqCont.readDir(path);
+			arqCont.readFile(path,nome);
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
