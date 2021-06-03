@@ -34,7 +34,7 @@ public class ArquivosController implements IArquivosController {
 			String linha = buffer.readLine();
 			while(linha != null) {
 				if (linha.contains("fruit")) {
-					System.out.println(linha.replace(";", " - "));
+					System.out.println("\t"+ linha.replace(";", " - "));
 					linha = buffer.readLine();	
 				}
 				else
